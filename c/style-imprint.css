@@ -1,0 +1,296 @@
+@font-face {
+	font-family: 'Inconsolata Regular';
+	src: url(../f/Play-Regular.ttf);
+}
+@font-face {
+	font-family: 'Inconsolata Medium';
+	src: url(../f/Inconsolata-Medium.ttf);
+}
+@font-face {
+	font-family: 'Inconsolata Semibold';
+	src: url(../f/Inconsolata-SemiBold.ttf);
+}
+body {
+    font-size: 12pt;
+    margin: 0;
+    cursor: url(../p/greek-runner-svg.svg), default;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+.header {
+    grid-column: 1 / span 6;
+}
+nav.navleft {
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    align-self: center;
+    mix-blend-mode: difference;
+}
+nav.navright {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    align-self: center;
+    mix-blend-mode: difference;
+}
+.coin-logo {
+    position: fixed;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms;
+}
+.coin-logo:hover {
+    width: 16%;
+    transition: 200ms;
+}
+.cato-logo {
+    position: fixed;
+    right: 50%;
+    translate: 100%;
+    margin-top: 5px;
+    filter: brightness(0%);
+    justify-content: center;
+    mix-blend-mode: difference;
+    width: 12vw;
+}
+.cato-logo:hover {
+
+}
+.mission-statement {
+    position: fixed;
+    width: 50vw;
+    top: -20px;
+    left: 0;
+    text-align: left;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-indent: 10%;
+    text-transform: uppercase;
+}
+.mission-statement-2 {
+    position: fixed;
+    width: 50vw;
+    top: -20px;
+    right: 0;
+    text-align: left;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-indent: 10%;
+    text-transform: uppercase;
+}
+.bg-overlay {
+    position: fixed;
+    height: 72vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+.bg-vid {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.video-wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.lookbook1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    /*background-image: url("../p/lookbook-1.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.lookbook1:hover {
+
+}
+.lookbook-vid1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: auto;
+    align-self: center;
+    object-fit: cover;
+}
+.lookbook-title-1 {
+    z-index: 2;
+    grid-column: 1;
+    text-align: center;
+    align-self: center;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    text-transform: uppercase;
+}
+.imprint-text {
+    margin-top: 0px;
+    width: 49vw;
+    z-index: 2;
+    text-align: left;
+    text-indent: 10%;
+    color: rgb(0, 0, 0);
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    text-transform: uppercase;
+}
+.imprint-text-2 {
+    position: fixed;
+    margin-top: 57px;
+    width: 50vw;
+    text-align: left;
+    text-indent: 10%;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    text-transform: uppercase;
+}
+.lookbook-images {
+
+}
+.lookbook-images:hover {
+
+}
+.lookbook2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    left: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: gray;
+}
+.lookbook2:hover {
+
+}
+.lookbook-href {
+    text-decoration: none;
+    align-items: center;
+    align-self: center;
+}
+.lookbook-href:hover::before {
+    content: none;
+}
+.lookbook-title-2 {
+    grid-column: 1;
+    text-align: center;
+    align-self: center;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-transform: uppercase;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.ul-right {
+    float: center;
+}
+li {
+    display: inline;
+    float: center;
+    text-transform: uppercase;
+    font-family: "Inconsolata Regular";
+    font-size: 12pt;
+}
+li a {
+    display: inline;
+    margin-right: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+li.li-right a {
+    display: inline;
+    margin-right: 0;
+    margin-left: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+img {
+    width: 100%;
+}
+
+.background-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    width: 100vw;
+    grid-column: 1 / span 6;
+    height: 50%;
+    /*background-image: url("../p/foto-25.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+a:hover::before {
+    content: url(../p/greek-runner-svg.svg) " ";
+}
+
+@media only screen and (max-width: 1200px) {
+    li {
+        display: block;
+    }
+    li a {
+        margin-right: 0;
+    }
+    nav.navleft {
+        margin-right: 0;
+        grid-column: 1 / span 2;
+    }
+    nav.navright {
+        grid-column: 5 / span 2;
+    }
+    .cato-logo {
+        width: 15%;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    .coin-logo {
+        width: 20%;
+    }
+    .coin-logo:hover {
+        width: 22%;
+    }
+    .cato-logo {
+        width: 20%;
+    }
+    .bg-overlay {
+        height: 60vh;
+    }
+  }

@@ -1,0 +1,256 @@
+@font-face {
+	font-family: 'Inconsolata Regular';
+	src: url(../f/Play-Regular.ttf);
+}
+@font-face {
+	font-family: 'Inconsolata Medium';
+	src: url(../f/Inconsolata-Medium.ttf);
+}
+@font-face {
+	font-family: 'Inconsolata Semibold';
+	src: url(../f/Inconsolata-SemiBold.ttf);
+}
+body {
+    cursor: url(../p/arrow-cursor.png) 0 0, pointer;
+    /*animation: cursor 1s linear infinite;*/
+    -webkit-animation: cursor 500ms infinite;
+    animation: cursor 500ms infinite;
+    font-size: 12pt;
+    margin: 0;
+}
+@keyframes cursor {
+    0% {cursor: url(../p/custom-cur-2.png), auto;}
+    50% {cursor: url(../p/custom-cur-3.png), auto;}
+    100% {cursor: url(../p/custom-cur-4.png), auto;}
+}
+@-webkit-keyframes cursor {
+    0% {cursor: url(../p/custom-cur-2.png), auto;}
+    50% {cursor: url(../p/custom-cur-3.png), auto;}
+    100% {cursor: url(../p/custom-cur-4.png), auto;}
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+.page-content {
+    opacity: 0;
+    transition: 1000ms;
+}
+.header {
+    grid-column: 1 / span 6;
+}
+nav.navleft {
+    text-align: right;
+    grid-column: 2;
+    align-self: center;
+    mix-blend-mode: difference;
+    margin-right: -25px;
+    
+}
+nav.navright {
+    text-align: left;
+    grid-column: 5 / span 2;
+    align-self: center;
+    mix-blend-mode: difference;
+    
+}
+.coin-logo {
+    position: fixed;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms;
+}
+.coin-loader {
+    position: fixed;
+    width: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 200ms;
+}
+.loader {
+    opacity: 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    transition: 1000ms;
+}
+.loading-text {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.coin-logo:hover {
+    width: 16%;
+    transition: 200ms;
+}
+
+.cato-logo {
+    position: fixed;
+    bottom: 45px;
+    left: 50%;
+    align-self: center;
+    justify-content: center;
+    transform: translate(-50%);
+    mix-blend-mode: difference;
+    width: 12vw;
+}
+.cato-logo:hover {
+
+}
+.footer {
+
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    translate: -50%;
+    mix-blend-mode: difference;
+}
+.footerli {
+
+}
+.instalogo-link {
+    margin-right: 0;
+}
+.instalogo {
+    width: 17px;
+    filter: invert();
+    translate: 0 25%;
+}
+.mission-statement {
+    position: fixed;
+    width: 50vw;
+    top: -17px;
+    left: 0;
+    text-align: left;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-indent: 10%;
+    text-transform: uppercase;
+}
+.mission-statement-2 {
+    position: fixed;
+    width: 50vw;
+    top: -17px;
+    right: 0;
+    text-align: left;
+    color: white;
+    mix-blend-mode: difference;
+    font-family: "Inconsolata Regular";
+    line-height: 100%;
+    text-indent: 10%;
+    text-transform: uppercase;
+}
+.bg-overlay {
+    position: fixed;
+    height: 72vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+.bg-vid {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.video-wrapper {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.ul-right {
+    float: center;
+}
+li {
+    display: inline;
+    float: center;
+    text-transform: uppercase;
+    font-family: "Inconsolata Regular";
+    font-size: 12pt;
+}
+li a {
+    display: inline;
+    margin-right: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+img {
+    width: 100%;
+}
+
+.background-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    width: 100vw;
+    grid-column: 1 / span 6;
+
+    height: 100vh;
+
+}
+
+a:hover::before {
+    content: url(../p/greek-runner-svg.svg) " ";
+}
+
+@media only screen and (max-width: 1200px) {
+    li {
+        display: block;
+    }
+    li a {
+        margin-right: 0;
+    }
+    nav.navleft {
+        margin-right: 0;
+        grid-column: 1 / span 2;
+    }
+    nav.navright {
+        grid-column: 5 / span 2;
+    }
+    .cato-logo {
+        width: 15%;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+
+    .coin-logo {
+        width: 20%;
+    }
+    .coin-loader {
+        width: 20%;
+    }
+    .coin-logo:hover {
+        width: 22%;
+    }
+    .cato-logo {
+        width: 20%;
+    }
+    .bg-overlay {
+        height: 60vh;
+    }
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+	
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CATO Running Club</title>
+
+    <!-- die CSS-Datei -->
+    <link rel="stylesheet" href="c/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/intersection.js" defer></script>
+</head>
+    
+<body onload="myFunction()">
+<main>
+    <section class="page-content" id="page-content">
+    <!--<div class="header">
+    </div>-->
+    <div class="video-wrapper">
+        <video class="bg-vid" autoplay="true" muted="" playsinline="" loop="true" src="p/background-vid-small.mp4" type="video/mp4"></video>
+    </div>
+    
+    <!--<img class="bg-overlay" src="p/background-overlay.svg">-->
+    <img class="coin-logo" src="p/cato-coin.png">
+
+    <img class="cato-logo" src="p/cato-logo-svg.svg">
+
+    <p class="mission-statement">cato is a community of like-minded individuals that all strive for the goal of daily improvement.</p>
+    <p class="mission-statement-2">we are tied together by the indispensible belief that we can accomplish every physical endeavor.</p>
+
+    
+
+    <div class="background-content">
+
+        <nav class="navleft">
+            <ul class="ul-right">
+                <li><a href="">Shop</a></li>
+                <li><a href="lookbooks.html">Lookbook</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navright">
+            <ul class="ul-right">
+                <li><a href="running-club.html">Runningclub</a></li>
+                <li><a href="https://www.instagram.com/catosport/">Insta</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+            <li class="footerli"><a href="imprint.html">IMPRINT</a></li>
+            <li class="footerli"><a href="">DATA PRIVACY</a></li>
+            <li class="footerli"><a href="">SHIPPING</a></li>
+            <li class="footerli"><a href="https://www.instagram.com/catosport/"><img class="instalogo" src="p/instagram-logo-svgrepo-com.svg"></a></li>
+            <li class="footerli"><a class="instalogo-link" href="https://open.spotify.com/playlist/0kMCMabLnxHMg1pdKeLm1d?si=DQH4aBG8Qc-BGfCtuStW1w"><img class="instalogo" src="p/spotify-svgrepo-com.svg"></a></li>
+        </div>
+        
+        
+
+        <!--<img class="background-img" src="p/6x7-12.jpg">-->
+    </div>
+    </section>
+    <div class="loader" id="loader">
+        <img class="coin-loader" src="p/coin-lade-animation.gif">
+        <!--<p class="loading-text">LOADING...</p>-->
+        <p class="mission-statement">cato is a community of like-minded individuals that all strive for the goal of daily improvement.</p>
+        <p class="mission-statement-2">we are tied together by the indispensible belief that we can accomplish every physical endeavor.</p>
+    </div>
+    
+
+</main>
+<script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+        document.getElementById("loader").style.opacity = "0";
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("page-content").style.opacity = "100%";
+    }
+    </script>
+</body>
+</html>
